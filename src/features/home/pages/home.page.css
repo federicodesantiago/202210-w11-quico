@@ -1,0 +1,35 @@
+.formP1 {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.radioButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+.TextBox {
+    width: 20rem;
+}
+
+.dataBox {
+    width: 10rem;
+}
+
+button {
+    margin: auto;
+    padding: 0.2rem 1rem;
+}
+
+.birthDateDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
