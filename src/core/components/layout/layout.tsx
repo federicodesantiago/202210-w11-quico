@@ -1,7 +1,6 @@
-import HomePage from '../../../features/home/pages/home.page';
-// import { MenuItems } from '../../types/menu.item';
 import { Footer } from '../footer/footer';
 import { Header } from '../header/header';
+import { AppRoutes } from '../routes/app.routes';
 
 export function Layout() {
     return (
@@ -9,7 +8,7 @@ export function Layout() {
             <Header></Header>
             <main>
                 <form className="form_Personal">
-                    <HomePage></HomePage>
+                    <AppRoutes></AppRoutes>
                 </form>
             </main>
             <Footer></Footer>
