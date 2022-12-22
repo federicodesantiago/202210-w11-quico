@@ -5,10 +5,6 @@ export type formPersonalType = {
     gender: string;
     email: string;
     info: string;
-    userName: string;
-    password: string;
-    rePassword: string;
-    accout: string;
 };
 
 export class FormPersonal implements formPersonalType {
@@ -18,11 +14,7 @@ export class FormPersonal implements formPersonalType {
         public birthDate: number,
         public gender: string,
         public email: string,
-        public info: string,
-        public userName: string,
-        public password: string,
-        public rePassword: string,
-        public accout: string
+        public info: string
     ) {
         this.name = ' ';
         this.lastName = ' ';
@@ -30,6 +22,23 @@ export class FormPersonal implements formPersonalType {
         this.gender = ' ';
         this.email = ' ';
         this.info = ' ';
+    }
+}
+
+export type formAccessType = {
+    userName: string;
+    password: string;
+    rePassword: string;
+    accout: string;
+};
+
+export class FormPersonalAccess implements formAccessType {
+    constructor(
+        public userName: string,
+        public password: string,
+        public rePassword: string,
+        public accout: string
+    ) {
         this.userName = ' ';
         this.password = ' ';
         this.rePassword = ' ';
